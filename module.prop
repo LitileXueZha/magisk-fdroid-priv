@@ -1,0 +1,9 @@
+# https://topjohnwu.github.io/Magisk/guides.html#moduleprop
+
+id=fdroid-priv
+name=F-Droid Privileged Extension
+version=v0.2.13
+versionCode=2130
+author=litilexuezha, other deverlopers
+description=Services to allow F-Droid to securely install and update apps
+updateJson=
