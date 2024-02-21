@@ -1,6 +1,6 @@
 {
     "version": "v0.2.13",
     "versionCode": 2130,
-    "zipUrl": "url",
-    "changelog": "url"
+    "zipUrl": "https://github.com/LitileXueZha/magisk-fdroid-priv/releases/latest/download/fdroid-priv.zip",
+    "changelog": "https://raw.githubusercontent.com/LitileXueZha/magisk-fdroid-priv/main/CHANGELOG"
 }

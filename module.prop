@@ -6,4 +6,4 @@ version=v0.2.13
 versionCode=2130
 author=litilexuezha, other deverlopers
 description=Services to allow F-Droid to securely install and update apps
-updateJson=
+updateJson=https://raw.githubusercontent.com/LitileXueZha/magisk-fdroid-priv/main/update.json
