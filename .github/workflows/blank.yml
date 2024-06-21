@@ -12,17 +12,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - id: repo
+        run: echo "name=$(basename ${{github.repository}})" >> $GITHUB_OUTPUT
       - name: Zip archive source code
-        run: |
-          mkdir ${{github.repository_owner}}
-          zip -9vr ${{github.repository}}.zip . -x .git*\*
+        run: zip -9vr ${{steps.repo.outputs.name}}.zip . -x .git*\*
       - uses: actions/upload-artifact@v4
         with:
-          name: ${{github.repository}}.zip
-          path: ${{github.repository}}.zip
+          name: ${{steps.repo.outputs.name}}.zip
+          path: ${{steps.repo.outputs.name}}.zip
       - name: Upload to releases
         uses: svenstaro/upload-release-action@v2
         with:
-          file: ${{github.repository}}.zip
+          file: ${{steps.repo.outputs.name}}.zip
           tag: ${{github.tag}}
           overwrite: true
