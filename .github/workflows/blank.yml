@@ -23,6 +23,7 @@ jobs:
       - name: Upload to releases
         uses: svenstaro/upload-release-action@v2
         with:
+          repo_token: ${{secrets.GITHUB_TOKEN}}
           file: ${{steps.repo.outputs.name}}.zip
           tag: ${{github.ref}}
           overwrite: true
