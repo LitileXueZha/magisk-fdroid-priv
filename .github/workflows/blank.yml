@@ -2,6 +2,7 @@
 # https://docs.github.com/en/actions/learn-github-actions/contexts#github-context
 # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#release
 # https://github.com/svenstaro/upload-release-action/issues/70#issuecomment-1298965029
+# https://docs.github.com/en/repositories/releasing-projects-on-github/linking-to-releases#linking-to-the-latest-release
 
 name: Release
 on:
