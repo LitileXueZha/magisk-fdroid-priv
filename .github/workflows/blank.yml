@@ -1,11 +1,13 @@
 # https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables
 # https://docs.github.com/en/actions/learn-github-actions/contexts#github-context
+# https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#release
 
 name: Release
 on:
   release:
     types:
       - released
+      - edited
   workflow_dispatch:
 jobs:
   upload:
